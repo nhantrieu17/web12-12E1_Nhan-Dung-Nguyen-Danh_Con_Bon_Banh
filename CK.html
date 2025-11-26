@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Official website for the band - tour dates, music, and more.">
+<link rel="icon" href="favicon.ico" type="image/x-icon"> <!-- Added favicon -->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> <!-- Updated to Font Awesome 6 -->
+<link rel="stylesheet" href="CK.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu" aria-label="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#home" class="w3-bar-item w3-button w3-padding-large"><img src="logo.jfif" class="logo" alt="logo"></a>
+    <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">BAND</a>
+    <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">TOUR</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="#merch" class="w3-bar-item w3-button">Merchandise</a>
+        <a href="#extras" class="w3-bar-item w3-button">Extras</a>
+        <a href="#media" class="w3-bar-item w3-button">Media</a>
+      </div>
+    </div>
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right" onclick="toggleSearch()" aria-label="Search"><i class="fa fa-search"></i></a>
+    <!-- Hidden search form -->
+    <div id="searchForm" class="w3-hide" style="position: absolute; right: 0; top: 46px; background: white; padding: 10px; border: 1px solid #ccc;">
+      <input type="text" placeholder="Search..." class="w3-input w3-border">
+      <button class="w3-button w3-black">Go</button>
+    </div>
+  </div>
+</div>
+
+<!-- Navbar on small screens -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BAND</a>
+  <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TOUR</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+  <a href="#merch" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px" id="home">
+
+  <!-- Automatic Slideshow Images -->
+  <div class="mySlides w3-display-container w3-center">
+    <img src="911-carrera.webp" alt="Porsche 911 Carrera" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Porsche 911 Carrera</h3>
+      <p><b>Hãy ngồi vào ghế lái của chiếc 911 mới và trở thành một phần của cộng đồng độc đáo.</b></p>   
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="Maybach s class.jpeg" alt="Mercedes-Maybach S-Class" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Mercedes-Maybach S-Class</h3>
+      <p><b>Mở ra thế giới sang trọng thuần túy cho chủ nhân suốt hành trình.</b></p>    
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="lamborghini-revuelto-1-862.jpg" alt="Lamborghini Revuelto" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Lamborghini Revuelto</h3>
+      <p><b>Không gian tương lai tạo nên sự kết nối liền mạch giữa người lái và máy móc, trong khi các chi tiết hình lục giác độc đáo .</b></p>    
+    </div>
+  </div>
+
+  <!-- The Band Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+    <h2 class="w3-wide">THE BAND</h2>
+    <p class="w3-opacity"><i>We love music</i></p>
+    <p class="w3-justify">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+      adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-third">
+        <p>John Doe</p>
+        <img src="images/bandmember1.jpg" class="w3-round w3-margin-bottom" alt="Band member John Doe" style="width:60%">
+      </div>
+      <div class="w3-third">
+        <p>Jane Smith</p>
+        <img src="images/bandmember2.jpg" class="w3-round w3-margin-bottom" alt="Band member Jane Smith" style="width:60%">
+      </div>
+      <div class="w3-third">
+        <p>Bob Johnson</p>
+        <img src="images/bandmember3.jpg" class="w3-round" alt="Band member Bob Johnson" style="width:60%">
+      </div>
+    </div>
+  </div>
+
+  <!-- The Tour Section -->
+  <div class="w3-black" id="tour">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      <h2 class="w3-wide w3-center">TOUR DATES</h2>
+      <p class="w3-opacity w3-center"><i>Remember to book your tickets!</i></p><br>
+
+      <ul class="w3-ul w3-border w3-white w3-text-grey">
+        <li class="w3-padding">September <span class="w3-tag w3-red w3-margin-left">Sold out</span></li>
+        <li class="w3-padding">October <span class="w3-tag w3-red w3-margin-left">Sold out</span></li>
+        <li class="w3-padding">November <span class="w3-badge w3-right w3-margin-right">3</span></li>
+      </ul>
+
+      <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+        <div class="w3-third w3-margin-bottom">
+          <img src="images/newyork.jpg" alt="New York concert venue" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>New York</b></p>
+            <p class="w3-opacity">Fri 27 Nov 2023</p> <!-- Updated date -->
+            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="openTicketModal('New York')">Buy Tickets</button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <img src="images/paris.jpg" alt="Paris concert venue" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>Paris</b></p>
+            <p class="w3-opacity">Sat 28 Nov 2023</p> <!-- Updated date -->
+            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="openTicketModal('Paris')">Buy Tickets</button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <img src="images/sanfran.jpg" alt="San Francisco concert venue" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>San Francisco</b></p>
+            <p class="w3-opacity">Sun 29 Nov 2023</p> <!-- Updated date -->
+            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="openTicketModal('San Francisco')">Buy Tickets</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!--------cut-------!>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <!-- Ticket Modal -->
+  <div id="ticketModal" class="w3-modal" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
+    <div class="w3-modal-content w3-animate-top w3-card-4">
+      <header class="w3-container w3-teal w3-center w3-padding-32"> 
+        <span onclick="closeTicketModal()" class="w3-button w3-teal w3-xlarge w3-display-topright" aria-label="Close modal">×</span>
+        <h2 id="modalTitle" class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Thuê xe <span id="eventName"></span></h2>
+      </header>
+      <div class="w3-container">
+        <form id="ticketForm" onsubmit="handleTicketSubmit(event)">
+          <p><label for="ticketQty"><i class="fa fa-shopping-cart"></i> 5 triệu/tiếng</label></p>
+          <input id="ticketQty" class="w3-input w3-border" type="number" placeholder="Bao nhiêu tiếng?" min="1" max="10" required>
+          <p><label for="ticketEmail"><i class="fa fa-user"></i> Gửi tới</label></p>
+          <input id="ticketEmail" class="w3-input w3-border" type="email" placeholder="Nhập email" required>
+          <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right" type="submit">THANH TOÁN <i class="fa fa-check"></i></button>
+          <button class="w3-button w3-red w3-section" type="button" onclick="closeTicketModal()">Đóng <i class="fa fa-remove"></i></button>
+          <p class="w3-right">Cần <a href="#contact" class="w3-text-blue">trợ giúp?</a></p>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- The Contact Section -->
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+    <h2 class="w3-wide w3-center">LIÊN HỆ</h2>
+    <p class="w3-opacity w3-center"><i>Có thắc mắc? Để lại lời nhắn cho chúng tôi</i></p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-col m6 w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker" style="width:30px"></i> TP. Hồ Chí Minh, Việt Nam<br>
+        <i class="fa fa-phone" style="width:30px"></i> Phone: +84 151515<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email: mcqueenvroom@gmail.com<br>
+      </div>
+      <div class="w3-col m6">
+        <form action="/action_page.php" method="post" target="_blank">
+          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Tên" required name="Name">
+            </div>
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="email" placeholder="Email" required name="Email">
+            </div>
+          </div>
+          <input class="w3-input w3-border" type="text" placeholder="Lời nhắn" required name="Message">
+          <button class="w3-button w3-black w3-section w3-right" type="submit">Gửi</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+<!-- End Page Content -->
+</div>
+
+<!-- Image of location/map -->
+<img src="truong-dinh-thien-ly-2.jpg" class="w3-image w3-greyscale-min" alt="Địa chỉ của Showroom" style="width:100%">
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <a href="https://facebook.com/band" aria-label="Facebook"><i class="fa-brands fa-facebook w3-hover-opacity"></i></a>
+  <a href="https://instagram.com/band" aria-label="Instagram"><i class="fa-brands fa-instagram w3-hover-opacity"></i></a>
+  <a href="https://snapchat.com/add/band" aria-label="Snapchat"><i class="fa-brands fa-snapchat w3-hover-opacity"></i></a>
+  <a href="https://pinterest.com/band" aria-label="Pinterest"><i class="fa-brands fa-pinterest w3-hover-opacity"></i></a>
+  <a href="https://twitter.com/band" aria-label="Twitter"><i class="fa-brands fa-twitter w3-hover-opacity"></i></a>
+  <a href="https://linkedin.com/company/band" aria-label="LinkedIn"><i class="fa-brands fa-linkedin w3-hover-opacity"></i></a>
+  
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+let myIndex = 0;
+const slides = document.getElementsByClassName("mySlides");
+
+function carousel() {
+  if (slides.length === 0) return; // Error handling
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  myIndex = (myIndex + 1) % slides.length;
+  slides[myIndex].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  const x = document.getElementById("navDemo");
+  if (x) {
+    x.classList.toggle("w3-show");
+  }
+}
+
+// Toggle search form
+function toggleSearch() {
+  const form = document.getElementById("searchForm");
+  if (form) {
+    form.classList.toggle("w3-hide");
+  }
+}
+
+// Open ticket modal with event name
+function openTicketModal(eventName) {
+  document.getElementById("eventName").textContent = eventName;
+  document.getElementById("ticketModal").style.display = "block";
+  document.getElementById("ticketModal").setAttribute("aria-hidden", "false");
+}
+
+// Close ticket modal
+function closeTicketModal() {
+  document.getElementById("ticketModal").style.display = "none";
+  document.getElementById("ticketModal").setAttribute("aria-hidden", "true");
+}
+
+// Handle ticket form submission (placeholder - integrate real payment)
+function handleTicketSubmit(event) {
+  event.preventDefault();
+  alert("Payment processing not implemented. This is a demo.");
+  closeTicketModal();
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  const modal = document.getElementById('ticketModal');
+  if (event.target === modal) {
+    closeTicketModal();
+  }
+}
+
+// Initialize on DOM load
+document.addEventListener('DOMContentLoaded', function() {
+  carousel();
+});
+</script>
+
+</body>
+</html>
+
+
+
