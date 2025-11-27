@@ -15,12 +15,22 @@ h1 {
   color: #007bff;
   text-align: center;
 }
-
+.w3-third img {
+    width: 90%;
+    height: 150px;        
+    object-fit: contain;  
+    object-position: center;
+    display: block;
+    margin: 0 auto;
+    background-color:none;
+}
 p {
   line-height: 1.6;
   margin-bottom: 15px;
 }
-
+#anh{
+  background-color: white;
+}
 .container {
   max-width: 800px;
   margin: 0 auto;
