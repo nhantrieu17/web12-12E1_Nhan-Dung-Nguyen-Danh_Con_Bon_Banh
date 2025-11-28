@@ -53,3 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
   slides = document.getElementsByClassName("mySlides");
   carousel();
 });
+function goToContact() {
+  closeTicketModal();
+  document.querySelector("#contact").scrollIntoView({ behavior: "smooth" });
+}
