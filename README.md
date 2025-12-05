@@ -13,6 +13,6 @@ Phần đặt lịch trải nghiệm là nơi tương tác chính: nó hiển th
 Form liên hệ hoạt động đơn giản: người dùng nhập thông tin và gửi qua phương thức POST. Cuối trang, hình showroom và footer được hiển thị như nội dung trình bày bổ sung.
 
 ## Thành viên & phân công:
-Tôn Thất An Nguyên - Read me, một phần code
-Triệu Hồng Thiện Nhân - Code, css
-Phùng Đình Chí Dũng - File báo cáo
+Tôn Thất An Nguyên - Read me, một phần code.
+Triệu Hồng Thiện Nhân - Code, css.
+Phùng Đình Chí Dũng - File báo cáo.
